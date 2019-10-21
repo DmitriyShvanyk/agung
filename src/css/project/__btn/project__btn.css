@@ -1,0 +1,20 @@
+.project__btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 35px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .3s ease, color .3s ease;
+  box-sizing: border-box;
+}
+
+.project__btn:hover,
+.project__btn:focus,
+.project__btn:active {
+  color: #fff;
+  background-color: #000;
+}

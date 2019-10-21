@@ -1,0 +1,12 @@
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  transition: color .3s ease-in-out;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: rgba(0, 0, 0, .7);
+  text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Cie Sans Book';
+  src: url('./fonts/CieSans-Book.woff2') format('woff2'),
+      url('./fonts/CieSans-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

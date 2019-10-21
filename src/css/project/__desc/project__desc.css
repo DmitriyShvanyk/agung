@@ -1,0 +1,18 @@
+.project__desc {
+  max-width: 50%;
+  padding: 0 2rem 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .project__desc {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project__desc {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+  }
+}

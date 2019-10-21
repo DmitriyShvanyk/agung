@@ -1,0 +1,7 @@
+.gallery__item{
+  padding-bottom: 66.54%;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  box-sizing: border-box;
+}

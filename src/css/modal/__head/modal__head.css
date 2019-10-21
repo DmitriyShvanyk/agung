@@ -1,0 +1,12 @@
+.modal__head {
+  padding: 1.5rem 2rem;
+  color: #737378;
+  background-color: #000;
+}
+
+@media screen and (max-width: 576px) {
+  .modal__head {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

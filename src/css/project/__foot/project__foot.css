@@ -1,0 +1,11 @@
+.project__foot {
+  padding: 0 2rem 3rem;
+}
+
+@media screen and (max-width: 576px) {
+  .project__foot {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+}

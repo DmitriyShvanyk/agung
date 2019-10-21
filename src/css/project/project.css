@@ -1,0 +1,24 @@
+@import url(../project/__head/project__head.css);
+@import url(../project/__body/project__body.css);
+@import url(../project/__foot/project__foot.css);
+@import url(../project/__picture/project__picture.css);
+@import url(../project/__image/project__image.css);
+@import url(../project/__title/project__title.css);
+@import url(../project/__btn/project__btn.css);
+@import url(../project/__desc/project__desc.css);
+@import url(../project/__paragraph/project__paragraph.css);
+
+
+.project {
+  overflow-x: hidden;
+}
+
+.project--active .project__body {
+  max-height: 5000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.project--active .project__foot {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

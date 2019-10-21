@@ -1,0 +1,52 @@
+.btn-modal {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #000;
+  background-color: #87878C;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  box-sizing: border-box;
+}
+
+.btn-modal::before,
+.btn-modal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  transition: width .3s ease;
+}
+
+.btn-modal::after {
+  left: auto;
+  right: 0;
+}
+
+.btn-modal__text {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-modal:hover,
+.btn-modal:focus,
+.btn-modal:active {
+  color: #737378;
+  text-decoration: none;
+}
+
+.btn-modal:hover::before,
+.btn-modal:hover::after,
+.btn-modal:focus::before,
+.btn-modal:focus::after,
+.btn-modal:active::before,
+.btn-modal:active::after {
+  width: 50%;
+}

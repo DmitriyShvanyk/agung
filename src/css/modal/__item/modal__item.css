@@ -1,0 +1,9 @@
+.modal__item+.modal__item {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+  .modal__item+.modal__item {
+    margin-top: 2rem;
+  }
+}

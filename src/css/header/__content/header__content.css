@@ -1,0 +1,19 @@
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__content::before {
+  content: '';
+  max-width: 33.333%;
+  width: 33.333%;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .header__content::before {
+    display: none;
+  }
+}

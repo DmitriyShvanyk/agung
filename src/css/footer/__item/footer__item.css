@@ -1,0 +1,12 @@
+.footer__item {
+  padding: 0 .25rem;
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 991px) {
+  .footer__item {
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

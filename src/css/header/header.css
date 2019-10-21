@@ -1,0 +1,29 @@
+@import url(../header/__inner/header__inner.css);
+@import url(../header/__top/header__top.css);
+@import url(../header/__title/header__title.css);
+@import url(../header/__content/header__content.css);
+@import url(../header/__item/header__item.css);
+@import url(../header/__scroll/header__scroll.css);
+
+
+.header {
+  height: 100vh;
+  display: table;
+  width: 100%;
+  background-image: url(../../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding: .75rem 2rem;
+  box-sizing: border-box;
+  min-height: 300px;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

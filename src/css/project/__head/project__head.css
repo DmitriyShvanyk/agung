@@ -1,0 +1,10 @@
+.project__head {
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .project__head {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
