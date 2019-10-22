@@ -1,15 +1,10 @@
-@import url(../header/__inner/header__inner.css);
 @import url(../header/__top/header__top.css);
 @import url(../header/__title/header__title.css);
 @import url(../header/__content/header__content.css);
 @import url(../header/__item/header__item.css);
-@import url(../header/__scroll/header__scroll.css);
 
 
 .header {
-  height: 100vh;
-  display: table;
-  width: 100%;
   background-image: url(../../images/header.jpg);
   background-color: #000;
   background-repeat: no-repeat;
@@ -17,14 +12,11 @@
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  padding: .75rem 2rem;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   min-height: 300px;
-}
-
-@media screen and (max-width: 576px) {
-  .header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  width: 100%;
+  box-sizing: border-box;
 }
