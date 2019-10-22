@@ -19,7 +19,7 @@
   .footer {
     font-size: 14px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -27,6 +27,5 @@
   .footer {
     font-size: 12px;
     padding-top: .75rem;
-    padding-bottom: .75rem;
   }
 }
