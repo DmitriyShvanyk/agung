@@ -1,5 +1,6 @@
 import "./index.css";
 import { LoadData } from "./modules/load.js";
+import { Modal } from "./modules/modal.js";
 
 
 // preloader
@@ -15,20 +16,8 @@ loadData.load(1000).then(function () {
 
 // modal
 const headerBtnScroll = document.querySelector('.header__scroll');
-const modal = document.querySelector('.modal');
-const modalClose = document.querySelector('.modal__close');
-
-function openModal() {
-  modal.classList.add('modal--open');
-}
-
-function closeModal() {
-  modal.classList.remove('modal--open');
-}
-
-headerBtnScroll.addEventListener('click', openModal);
-modalClose.addEventListener('click', closeModal);
-
+const modalElement = document.querySelector('.modal');
+const modal = new Modal(modalElement, headerBtnScroll);
 
 
 // projects

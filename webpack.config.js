@@ -18,7 +18,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './js/[name].[chunkhash].js'
-  },
+  }, 
   module: {
     rules: [
       {
@@ -35,15 +35,15 @@ module.exports = {
           'css-loader',
           'postcss-loader'
         ]
-      },      
+      },
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: {
           loader: "file-loader",
           options: {
             name: "./images/[name].[ext]",            
-            outputPath: '',
-            publicPath: "../",
+            outputPath: "",
+            publicPath: "",
           },
         },
       },
@@ -54,7 +54,7 @@ module.exports = {
           loader: "file-loader",
           options: {
             name: "./vendor/fonts/[name].[ext]",
-            publicPath: "../",
+            publicPath: "",
           },
         },
       },
@@ -63,9 +63,9 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: './css/main.[contenthash].css',
+      filename: './main.[contenthash].css',
       options: {
-        publicPath: "../",
+        publicPath: "",
       },
     }),
     new HtmlWebpackPlugin({
