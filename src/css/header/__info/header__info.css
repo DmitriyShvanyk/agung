@@ -1,0 +1,11 @@
+.header__info{
+  text-decoration: none;
+  color: #000;
+}
+
+.header__info:hover,
+.header__info:focus,
+.header__info:active{
+  color: #000;
+  text-decoration: underline;
+}

@@ -1,4 +1,4 @@
-export {Modal};
+export { Modal };
 
 class Modal {
   constructor(modalElement, btnElement) {
@@ -11,7 +11,8 @@ class Modal {
     this.btnElement.addEventListener('click', this.openModal);
     this.modalElement.querySelector('.modal__close').addEventListener('click', this.closeModal);
   }
-  openModal() {
+  openModal(e) {
+    e.preventDefault();
     this.modalElement.classList.add('modal--open');
   }
   closeModal() {

@@ -1,6 +1,7 @@
 .btn-modal {
   position: relative;
   cursor: pointer;
+  outline: none;
   border: none;
   width: 100%;
   display: block;

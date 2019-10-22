@@ -6,18 +6,19 @@ import { Modal } from "./modules/modal.js";
 // preloader
 const loadData = new LoadData();
 const preloader = document.querySelector('.preloader');
+const preloaderHidden = 'preloader--hidden';
 
 loadData.load(1000).then(function () {
-  preloader.classList.add('preloader--hidden');
+  preloader.classList.add(preloaderHidden);
 }).catch(function () {
-  preloader.classList.remove('preloader--hidden');
+  preloader.classList.remove(preloaderHidden);
 });
 
 
 // modal
-const headerBtnScroll = document.querySelector('.header__scroll');
+const headerLinkInfo = document.querySelector('.header__info');
 const modalElement = document.querySelector('.modal');
-const modal = new Modal(modalElement, headerBtnScroll);
+const modal = new Modal(modalElement, headerLinkInfo);
 
 
 // projects
@@ -39,3 +40,21 @@ function showProjects(e) {
 
 }
 projects.addEventListener('click', showProjects);
+
+
+
+// scroll to block
+const headerBtnScroll = document.querySelector('.header__scroll');
+const projectFirst = document.querySelector('#project-1');
+
+function scrollTo(element) {
+  window.scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: element.getBoundingClientRect().top + window.scrollY
+  });
+}
+
+headerBtnScroll.addEventListener('click', () => {
+  scrollTo(projectFirst);
+});
