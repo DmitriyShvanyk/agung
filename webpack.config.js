@@ -28,6 +28,7 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
+
       {
         test: /\.css$/,
         use: [
@@ -41,6 +42,7 @@ module.exports = {
           'postcss-loader'
         ]
       },
+
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: {
