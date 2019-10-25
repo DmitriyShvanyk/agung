@@ -32,3 +32,24 @@ const scrollTo = new ScrollTo(headerBtnScroll, projectFirst);
 // projects
 const projectsContainer = document.querySelector('.projects');
 const project = new Projects(projectsContainer);
+
+
+
+// transform header topbar
+let headerTop = document.querySelector('.header__top');
+
+function transformHeaderTop(){ 
+
+  let scrollY = window.scrollY || window.pageYOffset;
+  console.log(scrollY);
+
+  if(scrollY > 0){
+    headerTop.classList.add('header__top--transform');
+  }
+  else{
+    headerTop.classList.remove('header__top--transform');
+  }
+
+}
+
+window.addEventListener('scroll', transformHeaderTop);
