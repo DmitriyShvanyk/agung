@@ -3,6 +3,7 @@
 @import url(../header/__content/header__content.css);
 @import url(../header/__item/header__item.css);
 @import url(../header/__info/header__info.css);
+@import url(../header/__scroll/header__scroll.css);
 
 .header {
   background-image: url(../../images/header.jpg);
